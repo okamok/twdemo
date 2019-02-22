@@ -7,7 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Twitter Clone') }}</title>
+    <!-- <title>{{ config('app.name', 'Twitter Clone') }}</title> -->
+    <title>Twitter Clone</title>
+
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -55,11 +57,9 @@
                         @else
                             <li class="nav-item" style="display:flex; justify-content: center;align-items: center;">
 
-<?php
-                          // <a class="navbar-brand" href="{{ route('user_list') }}" style="font-size:13px">
-                          //     {{ __('ユーザ一覧') }}
-                          // </a>
-?>
+                          <a class="navbar-brand" href="{{ route('user_list') }}" style="font-size:13px">
+                              {{ __('ユーザ一覧') }}
+                          </a>
 
                             </li>
 
